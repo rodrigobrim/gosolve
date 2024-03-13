@@ -33,6 +33,9 @@ go run . destroy staging
 go run . destroy prod
 ```
 
+> [!WARNING]  
+> Don't use productive AWS accounts to test it. Please create a new VPC and set it in the config to use a shared account.
+
 
 Execution example:
 ```
