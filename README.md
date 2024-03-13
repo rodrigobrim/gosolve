@@ -3,7 +3,8 @@ Go-AWS Lab repository
 
 ### My toughts
 
-I enjoyed the challenge and eventually, I spent more time developing code, than the pseudo one. I hope it doesn't count against me =D
+I enjoyed the challenge and eventually, I spent more time developing code, than the pseudo one. I hope it doesn't count against me =D.
+
 For unit tests, I think the best approach is achieved by mocking the HTTP requests (changing aws.HTTPClient), but I didn't domain it, so I opted for an approach I'm faster.
 
 ### Authentication
