@@ -1,0 +1,7 @@
+package deploy
+
+func ApplyCertificate (config MyCertificateConfig) config.CertificateInputs {
+
+    return ApplyCertificate(config)
+
+}

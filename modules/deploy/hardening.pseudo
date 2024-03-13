@@ -1,0 +1,12 @@
+package deploy
+
+func ApplyHardening (config MyHardeningConfig) config.HarneningInputs {
+
+    Set out to config.HarneningInputs
+    ApplyAwsNetworkAcl(config.Acls)
+    Set out.SecurityGroups to ApplyAwsSecurityGroupRules(config.SecurityGroups)
+    Set out.IamRoles to ApplyAwsIam(config.Iam)
+    
+    return out
+
+}

@@ -1,0 +1,12 @@
+package deploy
+
+func ApplyNetworking (config MyNetworkingConfig) config.NetworkingInputs {
+
+    Set out to config.NetworkingInputs
+    Set out.VPC to ApplyAwsVPC(config)
+    Set out.Subnets to ApplyAwsSubnets(config)
+    Set out.Endpoints to ApplyAwsEndpoints(config)
+    
+    return out
+
+}

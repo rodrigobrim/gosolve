@@ -1,0 +1,11 @@
+package build
+
+func Build (config MyBuildConfig) string {
+
+    Set app to callBuild(config.App)
+    Push app binaries to the artifact repository
+    Set config.AMI to binary's repository endpoint
+    Set builderOutput to callPackerCMDBuilder(config.AMI, app)
+    return builderOutput.AMI_ID
+
+}

@@ -1,0 +1,7 @@
+package deploy
+
+func ApplyRoute53 (config MyRoute53Config) config.Route53Inputs {
+
+    return ApplyRoute53(config)
+
+}

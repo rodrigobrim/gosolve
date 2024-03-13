@@ -1,0 +1,7 @@
+package deploy
+
+func ApplyLoadBalancer (config MyLoadBalancerConfig) *CreateLoadBalancerOutput {
+
+    return elasticloadbalancing(config)
+
+}
